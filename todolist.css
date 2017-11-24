@@ -1,4 +1,63 @@
-.overall {
-	margin: 0px auto;
-	text-align:center;
+
+
+/*{
+  color: #ccc;
+  background-image: none;
+  background-color: transparent;
+  border-color: #ccc;
+}*/
+
+/*
+.btn-block {
+  display: block;
+  width: 100%;
+}*/
+/*{
+ position: relative;
+  width: 100%;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+}*/
+
+
+
+
+.input-task-style {
+
+		width: 70%;
+	margin-left:auto; 
+	margin-right:auto;
 }
+.center {
+	width: 70%;
+	margin-left:auto; 
+	margin-right:auto;
+}
+.table {
+
+}
+
+
+
+.Add-style {
+	width: 20%;
+	margin-left:auto; 
+	margin-right:auto;
+}
+.button-style {
+  color: #42b983;
+  background-color: transparent;
+  border-color: #ccc;
+  height: 2em;
+  width: 100%;
+  display: block;
+};
+
+
+
+
+
+
+
+
