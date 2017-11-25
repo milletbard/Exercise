@@ -1,23 +1,29 @@
 
+
+var tasks = [];
+var task = '';
+
 var app = new Vue({
 	el: '#taskApp',
-	data:{
-		Tasks:[],
-		Task:''
+	data:function() {
+		return {
+			tasks:[],
+			task:''
+		}
 	},
 	methods: {
-		AddTask: function() {
-			if (this.Task == '') {
+		addTask: function() {
+			if (this.task == '') {
 				alert('空值')
 			} else {
-				this.Tasks.push({
-					name: this.Task, done: false
+				this.tasks.push({
+					name: this.task, done: false
 				}) 
-				this.Task ='';
+				this.task ='';
 			}
 			},
 			DeleteTask: function(task) {
-				this.Tasks.splice(this.Tasks.indexOf(task),1)
+				this.tasks.splice(this.tasks.indexOf(task),1)
 			}
 		}
 	})
