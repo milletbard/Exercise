@@ -14,7 +14,6 @@ var app = new Vue({
 	methods: {
 		addTask: function() {
 			if (this.task == '') {
-				alert('空值')
 			} else {
 				this.tasks.push({
 					name: this.task, done: false

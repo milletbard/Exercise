@@ -11,12 +11,11 @@
 </head>
 <body>
 
-  
+  <div class="all">
     <div id="taskApp">
 
-      <h1 class='text-center'></h1>
+      <h1 class='text-center font-color '>Add New Task</h1>
       
-      <h2 class='text-center'>Add New Task</h2>
 
       <form v-on:submit.prevent='addTask'>
         <div class="center"> 
@@ -24,23 +23,23 @@
         </div>
           &nbsp;
         <div class="text-center add-style"> 
-           <input type="submit" value="Add" class="Add-style button-style">
+           <input type="submit" value="Add" class="font-color add-style button-style">
            &nbsp;
          </div>
       </form>
     
   
-      <table class="table center">
+      <table class="font-color table center ">
         <thead>
-          <th>Check Mark Done</th>
-          <th>Task Name</th>
+          <th>CheckMarkDone</th>
+          <th>TaskName</th>
           <th>Delete</th>
         </thead>
         <tbody> 
           <tr v-for='task in tasks'>
             <td><input type="checkbox" v-model='task.Done'></td>
             <td><span :class='{ taskDone: task.Done}'>{{ task.name }}</span></td>
-            <td><button v-on:click='DeleteTask(task)' class='button-style'>Delete</button></td>
+            <td><button v-on:click='DeleteTask(task)' class='button-style font-color'>Delete</button></td>
           </tr>
         </tbody>
       </table>
@@ -48,6 +47,6 @@
      <script src='jquery.js'></script>
      <script src='vue.js'></script>
      <script src='todolist.js'></script>
-    
+    </div>
 </body>
 </html>

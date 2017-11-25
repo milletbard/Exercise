@@ -22,6 +22,16 @@
 
 
 
+html {
+  margin-top: 10%;
+}
+
+h1 {
+  margin-bottom: 0.5rem;
+  font-family: inherit;
+  font-weight: 500;
+  line-height: 2;
+}
 
 .input-task-style {
 
@@ -34,26 +44,23 @@
 	margin-left:auto; 
 	margin-right:auto;
 }
-.table {
-
+.font-color {
+  color: #42b983;
 }
 
-font-decoration {
-  font-family: 
-}
 
 .add-style {
 	width: 20%;
 	margin-left:auto; 
 	margin-right:auto;
+
 }
 .button-style {
-	color: #42b983;
 	background-color: transparent;
-    border-color: #ccc;
-    height: 2em;
-    width: 100%;
-    display: block;
+  border-color: #ccc;
+  height: 2em;
+  width: 100%;
+  display: block;
 }
 
 
