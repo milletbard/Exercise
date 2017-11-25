@@ -11,13 +11,9 @@ var app = new Vue({
 				this.Tasks.push({
 					name: this.Tasks.name, done: false
 				}) 
-				this.
 			},
 			DeleteTask: function(task) {
 				this.Tasks.splice(this.Tasks.indexOf(task),1)
 			}
 		}
-
 	})
-
-
