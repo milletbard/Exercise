@@ -18,13 +18,13 @@
       
       <h2 class='text-center'>Add New Task</h2>
 
-      <form>
+      <form v-on:submit='AddTask'>
         <div class="center"> 
-        <input type="text" class="form-control">
+        <input type="text" class="form-control" v-model='Tasks.name'>
         </div>
           &nbsp;
         <div class="text-center Add-style"> 
-           <input type="submit" value="Add"  class="Add-style button-style ">
+           <input type="submit" value="Add" class="Add-style button-style">
            &nbsp;
          </div>
       </form>
@@ -32,21 +32,19 @@
   
       <table class="table center">
         <thead>
-          <th>check Mark Done</th>
+          <th>Check Mark Done</th>
           <th>Task Name</th>
           <th>Delete</th>
         </thead>
         <tbody>
-          <tr v-for='task in tasks'>
+          <tr v-for='task in Tasks'>
             <td><input type="checkbox"></td>
-            <td>{{task.name}}</td>
+            <td>{{ task.name }}</td>
             <td><button class='button-style'>Delete</button></td>
           </tr>
         </tbody>
       </table>
      </div>
-    </div>
-</div>
 
 
 
