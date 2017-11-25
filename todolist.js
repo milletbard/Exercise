@@ -2,14 +2,13 @@
 var app = new Vue({
 	el: '#taskApp',
 	data:{
-		Tasks:[
-		{name: '減肥',Done: true}
-		]
+		Tasks:[],
+		Task:''
 	},
 	methods: {
 		AddTask: function() {
 				this.Tasks.push({
-					name: this.Tasks.name, done: false
+					name: this.Task, done: false
 				}) 
 				this.Tasks.name ='';
 			},
