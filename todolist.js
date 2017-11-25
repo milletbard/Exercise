@@ -7,7 +7,7 @@ var app = new Vue({
 		]
 	},
 	methods: {
-		AddTask: function(e) {
+		AddTask: function() {
 			this.Tasks.push({
 				name: this.Tasks.name
 			})

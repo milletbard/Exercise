@@ -18,7 +18,7 @@
       
       <h2 class='text-center'>Add New Task</h2>
 
-      <form v-on:submit='AddTask'>
+      <form v-on:submit.prevent='AddTask'>
         <div class="center"> 
         <input type="text" class="form-control" v-model='Tasks.name'>
         </div>
