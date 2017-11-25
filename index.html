@@ -40,7 +40,7 @@
           <tr v-for='task in Tasks'>
             <td><input type="checkbox" v-model='task.Done'></td>
             <td><span :class='{ taskDone: task.Done}'>{{ task.name }}</span></td>
-            <td><button v-on:click='DeleteTask(task)' class='button-style'>Delete</button></td>
+            <td><button class='button-style'>Delete</button></td>
           </tr>
         </tbody>
       </table>
