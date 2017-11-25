@@ -38,18 +38,16 @@
         </thead>
         <tbody>
           <tr v-for='task in Tasks'>
-            <td><input type="checkbox"></td>
-            <td>{{ task.name }}</td>
+            <td><input type="checkbox" v-model='task.Done'></td>
+            <td><span :class='{ taskDone: task.Done}'>{{ task.name }}</span></td>
             <td><button class='button-style'>Delete</button></td>
           </tr>
         </tbody>
       </table>
      </div>
-
-
-
-    <script src='vue.js'></script>
-    <script src='todolist.js'></script>
-    <script src='jquery.js'></script>
+     <script src='jquery.js'></script>
+     <script src='vue.js'></script>
+     `<script src='todolist.js'></script>
+    
 </body>
 </html>
