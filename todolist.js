@@ -7,10 +7,14 @@ var app = new Vue({
 	},
 	methods: {
 		AddTask: function() {
+			if (this.Task == '') {
+				alert('空值')
+			} else {
 				this.Tasks.push({
 					name: this.Task, done: false
 				}) 
 				this.Task ='';
+			}
 			},
 			DeleteTask: function(task) {
 				this.Tasks.splice(this.Tasks.indexOf(task),1)
