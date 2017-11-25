@@ -8,16 +8,15 @@ var app = new Vue({
 	},
 	methods: {
 		AddTask: function() {
-			
-			if ( this.Tasks.name === null ) {
-				alert('null');
-			} else {
 				this.Tasks.push({
 					name: this.Tasks.name, done: false
 				}) 
+			},
+			DeleteTask: function(task) {
+				this.Tasks.splice(this.Tasks.indexOf(task),1)
 			}
 		}
-	}
-})
+
+	})
 
 
